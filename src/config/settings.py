@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     pinecone_index_name: str = os.getenv("PINECONE_INDEX_NAME", "hackrx-policy-index")
     
     # API Configuration
-    api_token: str = os.getenv("API_TOKEN", "1fcad8c4ef8f698546d9a985893a9bfa5c60c562930511aa5c5e2ac8366de6fc")
+    api_token: str = os.getenv("API_TOKEN", "")
     
     # Vector Database Configuration
     use_pinecone: bool = os.getenv("USE_PINECONE", "false").lower() == "true"
